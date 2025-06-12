@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>krzyk</title>
+<link rel="stylesheet" href="style_balala.css" type="text/css"/>
+	
+	<style>
+		body{
+			display:flex;
+			
+			
+		}
+		
+		
+		.kolumny{
+			display: flex;
+			flex-direction: column;
+			height: 90vh;
+			width:30vw;
+			
+			
+		}
+		.wiersze{
+			width: 18vw;
+			align-content: center;
+			margin-left: 5vw;
+			margin-right: 5vw;
+			margin-top: 5vh;
+			margin-top: 5vh;
+		}
+	
+	
+	</style>
+</head>
+
+<body>
+	<audio src='img/krzyk/krzyk_02.mp3' id='krzyk'></audio>
+	<audio src='img/krzyk/MOV00017_01.mp3' id='17'></audio>
+	<audio src='img/krzyk/MOV00019_01.mp3' id='19'></audio>
+    <audio src='img/krzyk/MOV00021_01.mp3' id='21'></audio>
+	<audio src='img/krzyk/MOV00045_01.mp3' id='45'></audio>
+	<audio src='img/krzyk/MOV00048_01.mp3' id='48'></audio>
+	
+	
+	<div class="kolumny">
+	<img class="wiersze" src="img/krzyk/krzyk.gif" onclick="playAudio('krzyk')">
+	<img class="wiersze" src="img/krzyk/MOV00017.MPG_001.gif" onclick="playAudio('45')">
+	<img class="wiersze" src="img/krzyk/MOV00026.MPG.gif" onclick="playAudio('19')">
+	
+	</div>
+	
+	<div class="kolumny">
+	<img class="wiersze" src='img/krzyk/MOV00045.MPG.gif' onclick="playAudio('19')">
+	<img class="wiersze" src="img/krzyk/MOV00017.MPG.gif" onclick="playAudio('17')">
+	<img class="wiersze" src="img/krzyk/MOV00048.MPG.gif" onclick="playAudio('45')">
+	</div>
+	
+		<div class="kolumny">
+	<img class="wiersze" src="img/krzyk/MOV00019.MPG.gif" onclick="playAudio('48')">
+	<img class="wiersze" src="img/krzyk/krzyk_001.gif" onclick="playAudio('21')">
+	<img class="wiersze" src="img/krzyk/MOV00021.MPG.gif" onclick="playAudio('krzyk')">
+			
+			
+	</div>
+	
+	
+	<script>
+	
+		function playAudio(id) {
+   document.getElementById(id).play();
+}
+	</script>
+</body>
+</html>
