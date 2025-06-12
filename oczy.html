@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>nie wiem</title>
+<link rel="stylesheet" href="style_balala.css" type="text/css"/>
+	
+	<style>
+		
+		body{
+			width:90vw;
+			height:70vh;
+			margin-left: 100px;
+			margin-right: 100px;
+			margin-bottom: 100px;
+			position: relative;
+		}
+		
+		.obr{
+			max-width: 10vw;
+			min-width: 3vw;
+			width:200px;
+			background-color:aqua;
+			position:absolute;
+		}
+		
+	
+		
+	</style>
+</head>
+
+<body>
+	
+	<a href ='krzyk.html'><div id="cale">
+	<img src='img/oczy/MOV00037.MPG 3_1.gif'  class='obr'>
+	<img src="img/oczy/MOV00037.MPG_001.gif"  class='obr'>
+	<img src="img/oczy/MOV00037.MPG_001_1.gif"  class='obr'>
+	<img src="img/oczy/MOV00037.MPG_001_2.gif"  class='obr'>
+	<img src='img/oczy/MOV00037.MPG_001_3.gif'  class='obr'>
+	<img src="img/oczy/MOV00037.MPG_002.gif"  class='obr'>
+	<img src="img/oczy/MOV00037.MPG_004.gif"  class='obr'>
+	<img src="img/oczy/MOV00037.MPG_005.gif"  class='obr'>
+	<img src="img/oczy/MOV00037.MPG_006.gif" class ='obr'>
+	<img src="img/oczy/MOV00037.MPG_007.gif"  class='obr'>
+	<img src="img/oczy/MOV00037.MPG_008.gif"  class='obr'>
+	<img src="img/oczy/MOV00037.MPG_008_1.gif"  class='obr'>
+	<img src="img/oczy/MOV00037.MPG_008_2.gif"  class='obr'>
+    <img src="img/oczy/MOV00037.MPG_008_3.gif"  class='obr'>
+		
+		</div></a>
+	
+	<script>
+	let kw = document.querySelectorAll('.obr');
+	let szer;
+	let wys;
+	let size;
+		
+		
+		
+		
+		kw.forEach(function pozycja (element){
+			szer= parseInt(document.body.offsetWidth) - parseInt(element.offsetWidth);
+			wys= parseInt(document.body.offsetHeight) - parseInt(element.offsetHeight);
+			size= parseInt(document.body.offsetWidth) - parseInt(element.offsetWidth);
+			element.style.left= Math.round(Math.random() * szer )+ 'px';
+		    element.style.top= Math.round(Math.random() * wys )+ 'px';
+			element.style.width= Math.round(Math.random() * size )+ 'px';
+			
+		});
+		
+		//element.addEventListener('mouseover', pozycja);
+		//cos moze zrobic zeby działało ale teraz mi sie nie chce
+		
+	
+	
+	
+	
+		
+		
+	</script>
+
+	
+</body>
+</html>
